@@ -1,0 +1,6 @@
+*.pycache
+*.pyc
+__pycache__
+tempCodeRunnerFile.py
+.vscode
+node_modules/

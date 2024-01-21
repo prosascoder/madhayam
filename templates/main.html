@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MADHYAM.COM</title> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-grad-school.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/lightbox.css') }}">
+  </head>
+<body>+
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>MADHYAM</em>.COM</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        
+        <li><a href="{{url_for('team')}}" id="contactLink">Contact</a></li>
+<!-- Add this script after the inclusion of Bootstrap and other scripts -->
+
+        <li><a href="#section6" id="loginLink">Login</a></li>
+        <script>
+          document.getElementById('loginLink').addEventListener('click', function() {
+            // Open a new HTML file or navigate to a different page when the login link is clicked
+            window.location.href = 'login-form-20/login.html';
+          });
+        </script>
+        
+        <li><a href="#section6" id="registerLink">Register</a></li>
+        <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 text-black bg-bg-primary">
+          Login with MetaMask
+        </button>
+        <!-- Add this script after the previous script -->
+<script>
+  document.getElementById('registerLink').addEventListener('click', function() {
+    // Open a new HTML file or navigate to a different page when the register link is clicked
+    window.location.href = 'registration/register.html';
+  });
+</script>
+      </ul>
+    </nav>
+  </header> 
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='assets/images/2.mp4') }}" type="video/mp4" />
+      </video>
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Way To Express Yourself</h6>
+              <h2><em>आपका</em> माध्यम</h2>
+              <div class="main-button">
+                <style>
+                  .main-button {
+                      margin-bottom: 20px; 
+                  }
+              </style>
+                <div class="main-button">
+                  <div class="scroll-to-section1"><a href="{{url_for('voiceover')}}" id="discoverLink">MADHYAM VOICEOVER</a></div>
+              </div>
+              <div class="main-button">
+                <div class="scroll-to-section2"><a href="{{url_for('imggenerator')}}" id="discoverLink1">MADHYAM IMAGE GENERATOR</a></div>
+            </div>
+             
+          
+          </div>
+      </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>AUDIO TO SIGN BHASHA</h4>
+              </div>
+              <div class="content-hide">
+                <p>Convert sign language to audio descriptions by describing the gestures, expressions, and actions used Capture the essence of the message conveyed through sign language in a concise and clear manner for individuals relying on audio.</p>
+                <div class="scroll-to-section"><a href="{{url_for('index')}}">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>SIGN BHASHA TO AUDIO</h4>
+              </div>
+              <div class="content-hide">
+               <p>Converting sign language (Bhasha) to audio involves describing the visual gestures, expressions, and actions in a way that conveys the message effectively for individuals relying on audio information.</p>
+                <div class="scroll-to-section"><a href="{{url_for('detect')}}">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>CHATBOT TRANSALATION</h4>
+              </div>
+              <div class="content-hide">
+                <p>Creating a chatbot translation involves designing a program that can interpret and respond to user input in one language while generating output in another. The chatbot uses natural language processing algorithms to understand and generate text, facilitating seamless communication between users speaking different languages.</p>
+                <div class="scroll-to-section"><a href="{{url_for('chat')}}" id="readMoreLink">Read more</a></div>
+            </div>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why To Choose Madhyam.Com?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>QUALITY TRANSALATION</a></li>
+              <li><a href='#tabs-2'>TOP MANAGEMENT</a></li>
+              <li><a href='#tabs-3'>COST EFFCTIVE WITH DIFFERENT USP</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/choose-us-image-01.png') }}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>QUALITY TRANSALATION</h4>
+                    <p>In the Sign Language to Audio and Voice to Sign Language project, achieving high-quality translation is essential for effective communication. Key considerations include linguistic accuracy, cultural sensitivity, real-time responsiveness, user feedback integration, and adherence to accessibility standards. These factors collectively contribute to a more inclusive and user-friendly experience, breaking down communication barriers for the hearing-impaired community.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/choose-us-image-02.png') }}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>TOP MANAGEMENT</h4>
+                    <p>Top management is crucial for the success of the Sign Language to Audio and Voice to Sign Language project. They provide strategic direction, make critical decisions, foster innovation, ensure efficient resource allocation, communicate with stakeholders, prioritize user needs, and maintain high-quality translation standards. Their leadership is instrumental in achieving the project's goals and breaking down communication barriers for the hearing-impaired community.</p> 
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='assets/images/choose-us-image-03.png') }}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>COST EFFCTIVE WITH DIFFERENT USP</h4>
+                    <p>In the Sign Language to Audio and Voice to Sign Language project, cost-effectiveness is achieved through technology optimization, efficient resource utilization, scalability, and user-centric costing. Additionally, unique selling propositions (USPs) such as enhanced translation accuracy and innovative features are integrated to distinguish the project. Collaboration and adaptability further contribute to its success, making it an affordable and innovative solution for breaking down communication barriers. </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/isotope.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/lightbox.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/tabs.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/video.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/slick-slider.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+    <script>
+       window.userWalletAddress = null
+    const loginButton = document.getElementById('loginButton')
+    const userWallet = document.getElementById('userWallet')
+
+    function toggleButton() {
+      if (!window.ethereum) {
+        loginButton.innerText = 'MetaMask is not installed'
+        loginButton.classList.remove('bg-purple-500', 'text-white')
+        loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
+        return false
+      }
+
+      loginButton.addEventListener('click', loginWithMetaMask)
+    }
+
+    async function loginWithMetaMask() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        .catch((e) => {
+          console.error(e.message)
+          return
+        })
+      if (!accounts) { return }
+
+      loginButton.innerText = accounts[0];
+
+      window.userWalletAddress = accounts[0]
+      userWallet.innerText = window.userWalletAddress
+      loginButton.innerText = 'Sign out of MetaMask'
+
+      loginButton.removeEventListener('click', loginWithMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', signOutOfMetaMask)
+      }, 200)
+    }
+
+    function signOutOfMetaMask() {
+      window.userWalletAddress = null
+      userWallet.innerText = ''
+      loginButton.innerText = 'Sign in with MetaMask'
+
+      loginButton.removeEventListener('click', signOutOfMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', loginWithMetaMask)
+      }, 200)
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleButton()
+    });
+    
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
